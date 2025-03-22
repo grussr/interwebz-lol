@@ -19,17 +19,12 @@
 <script type="application/ld+json">
 {"@type":"WebSite","headline":"interwebz-lol","url":"http://interwebz.lol/","description":"landing page for interwebz.lol","name":"interwebz-lol","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-
+<script src='https://unpkg.com/trianglify@^4/dist/trianglify.bundle.js'></script>
     <link rel="stylesheet" href="/assets/css/style.css?v=8c1d8f25f3dcd896f6ed68425426080e2901a416">
     <style>    
     { margin: 0; padding: 0; }
 
     body { 
-        background: url('https://source.unsplash.com/featured?seattle') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
         text-shadow:
           -1px -1px 0 #fff5,
           1px -1px 0 #fff5,
@@ -39,6 +34,13 @@
     </style>
   </head>
   <body>
+    <script>
+  const pattern = trianglify({
+    width: window.innerWidth,
+    height: window.innerHeight
+  })
+  document.body.appendChild(pattern.toCanvas())
+</script>
     <div class="container-lg px-3 my-5 markdown-body">
       
 
